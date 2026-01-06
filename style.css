@@ -15,9 +15,9 @@ body {
 /* =========================
    BERANDA
 ========================= */
-.beranda {
+.berandaa {
     height: 100vh;
-    background-image: url('beranda.jpg');
+    background-image: url('berandaa.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -36,18 +36,18 @@ body {
     padding: 20px;
 }
 
-.beranda-overlay h1 {
+.berandaa-overlay h1 {
     font-size: 52px;
     margin-bottom: 15px;
     letter-spacing: 1px;
 }
 
-.beranda-overlay p {
+.berandaa-overlay p {
     font-size: 22px;
     margin-bottom: 30px;
 }
 
-.beranda-btn {
+.berandaa-btn {
     background: #25D366;
     color: white;
     padding: 16px 36px;
@@ -59,7 +59,7 @@ body {
     transition: 0.3s;
 }
 
-.beranda-btn:hover {
+.berandaa-btn:hover {
     background: #1ebe5d;
     transform: scale(1.08);
 }
@@ -214,11 +214,11 @@ footer {
    RESPONSIVE
 ========================= */
 @media (max-width: 768px) {
-    .beranda-overlay h1 {
+    .berandaa-overlay h1 {
         font-size: 36px;
     }
 
-    .beranda-overlay p {
+    .berandaa-overlay p {
         font-size: 18px;
     }
 }
@@ -249,5 +249,6 @@ footer {
 .maps-btn:hover {
     background: #16a085;
 }
+
 
 

@@ -17,16 +17,17 @@ body {
 ========================= */
 .berandaa {
     height: 100vh;
-    background-image: url('berandaa.jpg');
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("berandaa.jpg?v=2");
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
-.beranda-overlay {
+.berandaa-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.55);
     color: white;
     display: flex;
     flex-direction: column;
@@ -39,7 +40,6 @@ body {
 .berandaa-overlay h1 {
     font-size: 52px;
     margin-bottom: 15px;
-    letter-spacing: 1px;
 }
 
 .berandaa-overlay p {
@@ -47,7 +47,7 @@ body {
     margin-bottom: 30px;
 }
 
-.berandaa-btn {
+.beranda-btn {
     background: #25D366;
     color: white;
     padding: 16px 36px;
@@ -55,11 +55,10 @@ body {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
     transition: 0.3s;
 }
 
-.berandaa-btn:hover {
+.beranda-btn:hover {
     background: #1ebe5d;
     transform: scale(1.08);
 }
@@ -80,28 +79,11 @@ body {
     text-align: center;
     border-radius: 18px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-
-.info-box:hover {
-    transform: translateY(-8px);
-}
-
-.info-box h3 {
-    margin-bottom: 10px;
-    color: #2c3e50;
 }
 
 /* =========================
    KAMAR
 ========================= */
-section h2 {
-    margin-top: 30px;
-    margin-bottom: 25px;
-    font-size: 30px;
-    color: #2c3e50;
-}
-
 .kamar-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -115,18 +97,13 @@ section h2 {
     border-radius: 18px;
     text-align: center;
     box-shadow: 0 10px 20px rgba(0,0,0,0.12);
-    transition: 0.3s;
     font-weight: bold;
 }
 
 .kamar span {
     display: block;
-    margin-top: 8px;
+    margin-top: 6px;
     font-weight: normal;
-}
-
-.kamar:hover {
-    transform: translateY(-10px);
 }
 
 .kamar.kosong {
@@ -147,10 +124,6 @@ section h2 {
     padding: 60px 20px;
 }
 
-.kontak h2 {
-    margin-bottom: 10px;
-}
-
 .wa-button {
     display: inline-block;
     margin-top: 25px;
@@ -161,19 +134,34 @@ section h2 {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    transition: 0.3s;
 }
 
-.wa-button span {
-    display: block;
-    font-size: 16px;
-    font-weight: normal;
+/* =========================
+   MAPS
+========================= */
+.maps {
+    padding: 40px 20px;
+    background: #f5f7fa;
+    text-align: center;
 }
 
-.wa-button:hover {
-    background: #1ebe5d;
-    transform: scale(1.08);
+.maps h2 {
+    margin-bottom: 20px;
+}
+
+.maps-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background: #1abc9c;
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.maps-btn:hover {
+    background: #16a085;
 }
 
 /* =========================
@@ -187,7 +175,7 @@ footer {
 }
 
 /* =========================
-   WHATSAPP FLOAT
+   WA FLOAT
 ========================= */
 .wa-float {
     position: fixed;
@@ -202,53 +190,14 @@ footer {
     font-size: 28px;
     line-height: 60px;
     text-decoration: none;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
-    transition: 0.3s;
 }
 
-.wa-float:hover {
-    transform: scale(1.15);
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
+/* RESPONSIVE */
 @media (max-width: 768px) {
     .berandaa-overlay h1 {
         font-size: 36px;
     }
-
     .berandaa-overlay p {
         font-size: 18px;
     }
 }
-.maps {
-    padding: 40px 20px;
-    background: #f5f7fa;
-    text-align: center;
-}
-
-.maps h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
-    color: #2c3e50;
-}
-.maps-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 14px 28px;
-    background: #1abc9c;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.maps-btn:hover {
-    background: #16a085;
-}
-
-
-
